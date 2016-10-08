@@ -1,0 +1,30 @@
+html{
+  font-size: 10px;
+}
+body{
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+}
+.wrapper{
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.container{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.clear{
+  clear: both;
+  float: none;
+}
+.container{
+  @include respond_media(ipad){
+    padding: 0 1rem;
+  }
+}
